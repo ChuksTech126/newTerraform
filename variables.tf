@@ -7,6 +7,7 @@ variable "region" {
 variable "ami_id" {
   description = "AMI ID for EC2 Instance"
   type        = string
+  default     = ami-068c0051b15cdb816
 }
 
 variable "instance_type" {
@@ -18,17 +19,19 @@ variable "instance_type" {
 variable "subnet_id" {
   description = "Subnet ID for EC2"
   type        = string
+  default     = subnet-01607af13fe862eb4
 }
 
 variable "security_group_ids" {
   description = "List of security group IDs"
   type        = list(string)
+  default     = sg-0ec7fd9bd57ac4a05
 }
 
 variable "key_name" {
   description = "EC2 key pair name"
   type        = string
-  default     = null
+  default     = chuks
 }
 
 variable "instance_name" {
